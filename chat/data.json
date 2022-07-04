@@ -1,0 +1,222 @@
+{
+    "intents": [{
+            "intent": "sales-order",
+            "training-phrases": [
+                "Sale order deliver",
+                "sale order deliver yet",
+                "status sales order"
+            ],
+            "responses": [
+                "Not enough quantity available at the shop."
+            ],
+            "context": [
+                ""
+            ]
+        }, {
+            "intent": "greeting",
+            "training-phrases": [
+                "Hi there",
+                "How are you",
+                "Is anyone there?",
+                "Hey",
+                "Hola",
+                "Hello",
+                "Good day"
+            ],
+            "responses": [
+                "Hello, thanks for asking",
+                "Good to see you again",
+                "Hi there, how can I help?"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "intent": "goodbye",
+            "training-phrases": [
+                "Bye",
+                "See you later",
+                "Good bye",
+                "Nice chatting to you, bye",
+                "Till next time"
+            ],
+            "responses": [
+                "See you!",
+                "Have a nice day",
+                "Bye! Come back again soon."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "intent": "thanks",
+            "training-phrases": [
+                "Thanks",
+                "Thank you",
+                "That's helpful",
+                "Awesome, thanks",
+                "Thanks for helping me"
+            ],
+            "responses": [
+                "Happy to help!",
+                "Any time!",
+                "My pleasure"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "intent": "noanswer",
+            "training-phrases": [],
+            "responses": [
+                "Sorry, can't understand you",
+                "Please give me more info",
+                "Not sure I understand"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "intent": "options",
+            "training-phrases": [
+                "How you could help me?",
+                "What you can do?",
+                "What help you provide?",
+                "How you can be helpful?",
+                "What support is offered"
+            ],
+            "responses": [
+                "I can guide you through Adverse drug reaction list, Blood pressure tracking, Hospitals and Pharmacies",
+                "Offering support for Adverse drug reaction, Blood pressure, Hospitals and Pharmacies"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "intent": "adverse_drug",
+            "training-phrases": [
+                "How to check Adverse drug reaction?",
+                "Open adverse drugs module",
+                "Give me a list of drugs causing adverse behavior",
+                "List all drugs suitable for patient with adverse reaction",
+                "Which drugs dont have adverse reaction?"
+            ],
+            "responses": [
+                "Navigating to Adverse drug reaction module"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "intent": "blood_pressure",
+            "training-phrases": [
+                "Open blood pressure module",
+                "Task related to blood pressure",
+                "Blood pressure data entry",
+                "I want to log blood pressure results",
+                "Blood pressure data management"
+            ],
+            "responses": [
+                "Navigating to Blood Pressure module"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "intent": "blood_pressure_search",
+            "training-phrases": [
+                "I want to search for blood pressure result history",
+                "Blood pressure for patient",
+                "Load patient blood pressure result",
+                "Show blood pressure results for patient",
+                "Find blood pressure results by ID"
+            ],
+            "responses": [
+                "Please provide Patient ID",
+                "Patient ID?"
+            ],
+            "context": [
+                "search_blood_pressure_by_patient_id"
+            ]
+        },
+        {
+            "intent": "search_blood_pressure_by_patient_id",
+            "training-phrases": [],
+            "responses": [
+                "Loading Blood pressure result for Patient"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "intent": "pharmacy_search",
+            "training-phrases": [
+                "Find me a pharmacy",
+                "Find pharmacy",
+                "List of pharmacies nearby",
+                "Locate pharmacy",
+                "Search pharmacy"
+            ],
+            "responses": [
+                "Please provide pharmacy name"
+            ],
+            "context": [
+                "search_pharmacy_by_name"
+            ]
+        },
+        {
+            "intent": "search_pharmacy_by_name",
+            "training-phrases": [],
+            "responses": [
+                "Loading pharmacy details"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "intent": "hospital_search",
+            "training-phrases": [
+                "Look up for hospital",
+                "Searching for hospital to transfer patient",
+                "I want to search hospital data",
+                "Hospital look up for patient",
+                "Looking up hospital details"
+            ],
+            "responses": [
+                "Please provide hospital name or location"
+            ],
+            "context": [
+                "search_hospital_by_params"
+            ]
+        },
+        {
+            "intent": "search_hospital_by_params",
+            "training-phrases": [],
+            "responses": [
+                "Please provide hospital type"
+            ],
+            "context": [
+                "search_hospital_by_type"
+            ]
+        },
+        {
+            "intent": "search_hospital_by_type",
+            "training-phrases": [],
+            "responses": [
+                "Loading hospital details"
+            ],
+            "context": [
+                ""
+            ]
+        }
+    ]
+}
